@@ -3,14 +3,21 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
 
-    public float lives = 2f;
+    public Rigidbody fisicaPelota;
 
-    Vector2 startPosition;
+    public float velocidadPelota = 300; 
+
+    private Vector2 directionPelota; 
+
+
 
     void Start()
     {
-       startPosition = transform.position;
-        ResetLevel();
+        directionPelota.x = Random.Range(-1f, 1f);
+
+        directionPelota.y = 1;
+
+        fisicaPelota.AddForce(directionPelota * velocidadPelota);
     }
 
 
@@ -20,22 +27,7 @@ public class Ball : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("DeadZone"))
-        {
-            Debug.Log("Game Over");
-            lives--;
+  
 
-            if (lives <= 0)
-            {
-                ResetLevel();
-            }
-        }
-    }
-
-    public void ResetLevel()
-    {
-        transform.position = startPosition;
-    }
+   
 }
