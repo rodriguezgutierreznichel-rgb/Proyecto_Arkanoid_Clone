@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material
-  m_Shader: {fileID: -6465566751694194690, guid: 2e5cf583773ef9c48ac180338e723cde, type: 3}
+  m_Name: Material3
+  m_Shader: {fileID: -6465566751694194690, guid: b03d9c7d79d1f804eb2e42adf240334f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,15 +38,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _IntensidadBorde: 4.5
-    - _IntensidadDeColor: 85
+    - _IntensidadBorde: 4.3
+    - _IntensidadDeColor: 20
+    - _MaxDelPoligono: 0.4
+    - _MinDelPoligono: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Rpeticiones: 50
     m_Colors:
-    - _ColorBorde: {r: 0, g: 0.87746024, b: 1, a: 0}
+    - _ColorBorde: {r: 0, g: 0.5327119, b: 1, a: 0}
+    - _ColorBorde2: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &2912393886374083258
+--- !u!114 &8720225303771308066
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
