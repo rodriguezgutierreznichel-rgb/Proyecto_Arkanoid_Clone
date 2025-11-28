@@ -42,17 +42,12 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstaculo"))
         {
             directionPelota.x = Random.Range(-1f, 1f);
-            directionPelota.y = -1;
+            directionPelota.y = -1 * -1;
             fisicaPelota.AddForce(directionPelota * velocidadPelota);
 
 
         }
-        else
-        {
-            directionPelota.x = Random.Range(-1f, 1f);
-            directionPelota.y = 0;
-            fisicaPelota.AddForce(directionPelota * velocidadPelota);
-        }
+        
 
     }
 
